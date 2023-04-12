@@ -8,7 +8,7 @@ ${op[0]} \n ${op[1]} \n ${op[2]} \n ${op[3]}`));
 
 
 let text= document.getElementById('text')
-text.innerHTML = `<h2>Calculando...</h2>`
+text.innerHTML = `<h2>Realizando operação...</h2>`
 
 switch (saida) {
     case 1:
@@ -24,7 +24,7 @@ switch (saida) {
         text.innerHTML += `<p>${num1}*${num2}=${num1*num2}</p>`
         break
     default:
-        text.innerHTML += `<p>OPÇÃO INVÁLIDA! Você digitou ${num1} e ${num2}, mas não sei o que fazer com eles. </p>`
+        text.innerHTML += `<p>OPÇÃO INVÁLIDA! Você digitou ${num1} e ${num2}, mas a operação não existe </p>`
          break
 }
 
